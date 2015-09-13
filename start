@@ -1,0 +1,10 @@
+	void Start()
+	{
+		status = transform.root.GetComponent<CharacterStatus>();
+
+		// 오디오 초기화.
+		hitSeAudio = gameObject.AddComponent<AudioSource>();
+		hitSeAudio.clip = hitSeClip;
+		hitSeAudio.loop = false;
+	}
+	
